@@ -1,0 +1,58 @@
+.calculator{
+    width: 425px;
+    height: 518px;
+    background-color: #B4B4B4;
+}
+
+.gradient {
+background: -webkit-linear-gradient(#DCDCDC,#BBBBBB,#AFAFAF,#B0B0B0);
+
+}
+
+.calculator button{
+    background-color: #D4D4D4;
+    color: #393939;
+    width: 90px;
+    height: 50px;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+
+    border-radius: 10px;
+    border: 1px solid rgba(57, 57, 57, 0.8);
+
+    -webkit-box-shadow: inset -1px -1px 8px #888, inset 1px -1px 8px #888, inset 0 4px 8px 0px #FFFFFF;
+    text-shadow: 0px 1px 0px #747474;
+
+}
+
+.calculator .output{
+    background-color: #D2E6A9;
+    height: 90px;
+    width: 380px;
+
+    padding: 3px;
+   
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Lucida Grande;
+
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+
+   
+    border-radius: 10px;
+     -webkit-box-shadow: inset 0 3px 8px #AFB592, 0 4px 6px #FFFFFF, -3px -3px 3px #888, 3px -3px 3px #888;
+}
+.calculator .tall-button{
+
+    
+}
+

@@ -1,0 +1,114 @@
+<html>
+<head>
+    <link href = "Calculator.css" rel = "stylesheet"></link>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="Calculator.js"></script>
+</head>
+<body>
+    <div class = "calculator gradient">
+    <div style="position:relative;left:-4px;top:12px;" id="output" class = "output">
+        <p style="position:relative;right:64px;down:45px;" align="right" id='p'></p>
+    </div>
+    <div style="position:relative;left:-4px;top:12px;">
+    <div>
+        <button style = "margin-left:18px" class="shadow-button">MC</button>
+        <button class="shadow-button">M+</button>
+        <button class="shadow-button">M-</button>
+        <button class="shadow-button">MR</button>
+    </div>
+    <div>
+        <button id="clear" class="shadow-button" style = "margin-left:18px">C</button>
+        <button id="pm" class="shadow-button">&#177;</button>
+        <button id="divide" class="shadow-button">&divide;</button>
+        <button id="times" class="shadow-button">&times;</button>
+    </div>
+    <script>
+    $( "#clear" ).click(function() {
+    $("p").html("");
+    });
+    $( "#pm" ).click(function() {
+    $("p").append(" ");
+    });
+    $( "#divide" ).click(function() {
+    $("p").append(" / ");
+    });
+    $("#times").bind("click",function(){
+    $("p").append(" * ");
+    });
+    </script>
+    <div>
+        <button id="7" style = "margin-left:18px" class="shadow-button">7</button>
+        <button id="8" class="shadow-button">8</button>
+        <button id="9" class="shadow-button">9</button>
+        <button id="minus" class="shadow-button">-</button>
+    </div>
+    <script>
+    $( "#7" ).click(function() {
+    $("p").append("7");
+    });
+    $( "#8" ).click(function() {
+    $("p").append("8");
+    });
+    $( "#9" ).click(function() {
+    $("p").append("9");
+    });
+    $("#minus").bind("click",function(){
+    $("p").append(" - ");
+    });
+    </script>
+    <div>
+        <button id="4" style="margin-left:18px" class="shadow-button">4</button>
+        <button id="5" class="shadow-button">5</button>
+        <button id="6" class="shadow-button">6</button>
+        <button id="plus"class="shadow-button">+</button>
+    </div>
+    <script>
+    $( "#4" ).click(function() {
+    $("p").append("4");
+    });
+    $( "#5" ).click(function() {
+    $("p").append("5");
+    });
+    $( "#6" ).click(function() {
+    $("p").append("6");
+    });
+    $("#plus").bind("click",function(){
+    $("p").append(" + ");
+    });
+    </script>
+    <div>
+        <button id="1" style = "margin-left:18px;" class="shadow-button moveup">1</button>
+        <button id="2" class="shadow-button moveup">2</button>
+        <button id="3" class="shadow-button moveup">3</button>
+        <button id="equals" class="tall-button">=</button>
+    </div>
+    <script>
+    $( "#1" ).click(function() {
+    $("p").append("1");
+    });
+    $( "#2" ).click(function() {
+    $("p").append("2");
+    });
+    $( "#3" ).click(function() {
+    $("p").append("3");
+    });
+    $("#equals").click(function() {    
+    calculate();
+    });
+    </script>
+    <div>
+        <button id="0" style = "margin-left:18px; width:188px" class="shadow-button">0</button>
+        <button id="dec" class="shadow-button">.</button>
+    </div>
+    <script>
+    $( "#0" ).click(function(){
+     $("p").append("0");
+    });
+    $( "#dec" ).click(function() {
+     $("p").append(".");
+    });
+    </script>
+    </div>
+    </div>
+</body>
+</html>
